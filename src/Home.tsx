@@ -1,6 +1,7 @@
 import React from 'react'
 import ImageGrid from './ImageGrid';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -22,7 +23,8 @@ const Home = () => {
      For a while now, I've been looking into a project, I call it Graphers. Its an Uber like app but for photography.
    {/*Lately, I begun working on a side project called Graphers. It's a Uber like app but for photograpers.*/}
     </h4>
-    <p>View Project→﻿</p>
+    <p className="flex items-center border-4 justify-center border-transparent text-xl mt-1 font-semibold h-40 w-80 mx-auto"> Idea: “I need a photographer. Where can I find, book, and pay one easily?”</p>
+   <Link to='/graphers'> <p className='mt-9 underline'>View Project →</p></Link>
   </section>
  { /*This section contains the footer */}
  <Footer/>

@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { FaInstagram, FaLinkedin} from "react-icons/fa";
 import {Link} from 'react-router-dom';
+import { FiMenu, FiX } from "react-icons/fi"; 
 
 const Nav = () => {
-  
+  const [menuOpen, setmenuOpen] = useState(false);
+
   return (
    
     <nav className="flex justify-between items-center px-6 py-4 mt-7 m-7">
@@ -21,9 +23,9 @@ const Nav = () => {
           </Link>
         
         
-        <a href="#graphers" className="text-gray-900 hover:text-black">
+        <Link to="/graphers" className="text-gray-900 hover:text-black">
           Graphers
-        </a>
+        </Link>
 
         {/* Social Icons */}
         <div className="flex gap-4 text-xl">
@@ -41,9 +43,12 @@ const Nav = () => {
           >
             <FaLinkedin />
           </a>
-         
         </div>
       </div>
+
+      {/*burger menu*/}
+        
+     
     </nav>
   );
 }

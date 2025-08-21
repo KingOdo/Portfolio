@@ -5,6 +5,7 @@ import Nav from './Nav';
 import About from "./About";
 import Home from "./Home";
 import './App.css'
+import Graphers from './Graphers';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path='/graphers' element={<Graphers/>} />
     </Routes>
   
     </>
