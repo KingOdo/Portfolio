@@ -6,8 +6,9 @@ const ImageGrid: React.FC = () => {
     "/images/codetrip.jpg",
     "/images/sunset1.jpg",
     "/images/plane.jpg",
-    "/images/touched grass.jpg",
+   "/images/touched grass.jpg",
     "/images/hydration.jpg",
+    
   ];
 
   
@@ -29,3 +30,5 @@ const ImageGrid: React.FC = () => {
 };
 
 export default ImageGrid;
+
+
