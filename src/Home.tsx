@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import ImageGrid from './ImageGrid';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';

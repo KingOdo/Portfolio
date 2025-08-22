@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 
 const projects = [
   {
@@ -30,7 +30,7 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-          Every now then, I take breaks to work on <span className="text-black">exciting side projects</span>
+          Every now and then, I take breaks to work on <span className="text-black">exciting side projects</span>
         </h2>
         <p className="text-gray-700 mb-8 max-w-2xl">
          I take the time to experiment and build things that I find useful and intresting. A few examples of these projects can be found

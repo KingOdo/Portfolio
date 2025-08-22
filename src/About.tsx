@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import Footer from './Footer'
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss, SiCplusplus } from "react-icons/si";
