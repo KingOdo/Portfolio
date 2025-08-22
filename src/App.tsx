@@ -1,12 +1,10 @@
-
-import type React from 'react'
+//import type React from 'react'
 import { Routes, Route } from "react-router-dom";
 import Nav from './Nav';
 import About from "./About";
 import Home from "./Home";
 import './App.css'
 import Graphers from './Graphers';
-
 
 function App() {
 

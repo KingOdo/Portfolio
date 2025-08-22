@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { FiMenu, FiX } from "react-icons/fi"; 
