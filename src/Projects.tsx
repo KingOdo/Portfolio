@@ -13,15 +13,21 @@ const projects = [
     description: "A full-stack web application for managing hotel reservations and guests.Various Unit Testing to ensure functionality.",
     tech: "C# + .NET Core",
     codeLink: "#",
-    viewLink: "#",
   },
   {
     title: "Portfolio Website",
     description: "My personal web portfolio.",
     tech: "Typescript + React + Tailwind CSS",
     codeLink: "https://github.com/KingOdo/Portfolio",
-    viewLink: "#",
+    viewLink: "https://kingodo.vercel.app/",
   },
+  {
+    title: "Finance App Tracker",
+    description: "A web application to track finances and visualize spending habits. Developed and used especially by Hospitality and Lodging Service Professionals.",
+    tech: "React + Tailwind CSS + Firebase",
+    codeLink: "#",
+    viewLink: "#",
+  }
 ];
 
 const Projects = () => {
