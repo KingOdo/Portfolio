@@ -25,8 +25,8 @@ const projects = [
     title: "Finance App Tracker",
     description: "A web application to track finances and visualize spending habits. Developed and used especially by Hospitality and Lodging Service Professionals.",
     tech: "React + Tailwind CSS + Firebase",
-    codeLink: "#",
-    viewLink: "#",
+    codeLink: "https://github.com/KingOdo/Book-Keep-Tracker",
+    viewLink: "https://book-keep-tracker.vercel.app/",
   }
 ];
 
