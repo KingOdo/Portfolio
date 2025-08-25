@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const ImageGrid: React.FC = () => {
   const images = React.useMemo(
@@ -13,6 +13,23 @@ const ImageGrid: React.FC = () => {
     []
   );
 
+  const [loaded, setLoaded] = useState(false);
+
+  // Preload images before showing them
+  useEffect(() => {
+    let loadedCount = 0;
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          setLoaded(true);
+        }
+      };
+    });
+  }, [images]);
+
   return (
     <section className="max-w-8xl mx-auto px-4 py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
@@ -21,12 +38,16 @@ const ImageGrid: React.FC = () => {
             key={index}
             className="relative w-full aspect-square overflow-hidden rounded"
           >
-            <img
-              src={src}
-              alt={`Image ${index + 1}`}
-              loading="eager"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+            {loaded ? (
+              <img
+                src={src}
+                alt={`Image ${index + 1}`}
+                loading="eager"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            ) : (
+              <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+            )}
           </div>
         ))}
       </div>
