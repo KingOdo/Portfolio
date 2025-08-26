@@ -34,7 +34,6 @@ const Projects = () => {
   return (
     <section className="bg-[#f9f9f9] py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
           Every now and then, I take breaks to work on <span className="text-black">exciting side projects</span>
         </h2>
@@ -43,7 +42,7 @@ const Projects = () => {
           on my GitHub page.
         </p>
         <a
-          href="https://github.com/KingOdo"
+          href="https://github.com/KingOdo" target="_blank"
           className="inline-block bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition"
         >
           View Github
@@ -62,10 +61,10 @@ const Projects = () => {
               <p className="text-gray-600 mt-2">{project.description}</p>
               <p className="text-sm text-gray-500 mt-2">{project.tech}</p>
               <div className="flex gap-4 mt-4">
-                <a href={project.codeLink} className="text-blue-600 hover:underline">
+                <a href={project.codeLink} className="text-blue-600 hover:underline" target="_blank">
                   Code
                 </a>
-                <a href={project.viewLink} className="text-blue-600 hover:underline">
+                <a href={project.viewLink} className="text-blue-600 hover:underline" target="_blank">
                   View
                 </a>
               </div>
