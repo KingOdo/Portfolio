@@ -9,7 +9,7 @@ const Home = () => {
     <>
      <section className="max-w-5xl px-4 py-20 ml-4 sm:ml-12">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-normal leading-snug text-black max-w-3xl">
-        Hi, I’m a software engineer, a 2026 graduate. I post regularly about my daily life and projects.
+        Hi, I’m a software engineer and a techie. I post regularly about my daily life and projects.
       </h1>
     </section>
 
